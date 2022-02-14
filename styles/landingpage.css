@@ -1,11 +1,13 @@
 body {
   background-color: #80a873;
   font-family: 'IBM Plex Sans', sans-serif;
+  position: relative;
 }
 
 header {
   display: flex;
-  margin: 20px;
+  position: sticky;
+  top: 20px;
 }
 
 .nav-section {
@@ -24,6 +26,10 @@ a {
   text-decoration: none;
   color: black;
   padding: 20px;
+}
+
+a:hover{
+  background:#B39283;
 }
 
 .info-section {
