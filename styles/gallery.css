@@ -56,8 +56,21 @@ body {
 .block__content { 
     display: flex;
     flex-direction: column;
-    align-items: center;
-   
+    align-items: center;   
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+}
+.block__content--img {
+    height: 450px;
+    width: 700px;
+    border: 0px;
+    border-radius: 30%;
+    display: flex;
+    justify-content: center;
+    
 }
 
 .block__images {
@@ -83,7 +96,7 @@ body {
     font-size: 14px;
 }
 
-img {
+.block__image--hp {
     display: flex; 
     padding: 10px;
     max-width: 250px;
@@ -96,4 +109,10 @@ img {
 
 .block__image:hover {
     transform: scale(1.7);
+}
+
+.mer_info {
+    text-align: center;
+    padding: 5%;
+    font-size: large;
 }
