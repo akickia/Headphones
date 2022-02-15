@@ -1,43 +1,85 @@
 body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     background-color: #80a873;
     font-family: 'IBM Plex Sans', sans-serif;
-}
+  }
+
+
+/*header*/
+
+  header {
+    max-width: 1300px;
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px;
+  }
+
+  .header__logo {
+    display: flex;
+    font-size: 50px;
+    font-weight: 300;
+  }
+
+  .nav-section {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    align-items: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+  }
+
+
+  /*main*/
 
 .block {
-    background-image: url("../images/hp_notes.png");
-    background-repeat: repeat-y;
-    background-size: cover;
-}
-.block__title {
-    font-family: 'IBM Plex Sans', sans-serif;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    width: 100%;
+    justify-content: center;
 }
 
-.block__content {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: 600;
-    text-align: center;
-    
+.block__content { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .block__images {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: fit-content;
-    margin: 0 10%;
+    justify-content: space-around;
     background-color: #B39283;
+    align-content: center;
 }
 
 img {
     display: flex; 
     margin: 20px;
     padding: 20px;
-    max-width: 300px;
-    max-height: 300px;
+    width: 250px;
+    height: 250px;
     border-color: #CFB997;
     border-width: 2px;
     border-style: solid;
     background-color: #80a873;
 }
 
+img:hover {
+    transform: scale(1.5);
+}
