@@ -92,7 +92,7 @@ a {
   max-width: 600px;
 }
 
-/* test-div för att visa på scroll/position fixed */
+/* test-div för att visa på scroll/position sticky */
 .test-div {
   width: 100%;
   max-width: 800px;
