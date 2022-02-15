@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+}
+
 body {
   background-color: #80a873;
   font-family: 'IBM Plex Sans', sans-serif;
@@ -8,35 +12,61 @@ header {
   display: flex;
   position: sticky;
   top: 10px;
+  background-color:#B39283;
 }
 
 .logo {
+  margin-left: 20px;
   width: 80px;
   height: 95px;
 }
+
 .nav-section {
   width: 100%;
   display: flex;
-  list-style-type: none;
   justify-content: flex-end;
   align-items: center;
-  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
+  margin-right: 10px;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
+li {
+  font-weight: bold;
+  position: relative;
+  padding: 10px 10px;
+}
+
+li::after {
+  background-color: black;
+  content: "";
+  width: 0;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  transition: width 0.35s ease 0s;
+  position: absolute;
+}
+
+li:hover::after {
+  width: 100%;
+  margin-left: 0px;
+  display: flex;
 }
 
 a {
   text-decoration: none;
   color: black;
-  padding: 20px;
+  padding: 10px;
 }
 
-a:hover{
-  background:#B39283;
-}
-
-.info-section {
+.main-section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -50,6 +80,25 @@ a:hover{
   font-weight: 300;
 }
 
-.info-text {
+.info-section {
   margin: 10px 200px 10px 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-text {
+  width: 100%;
+  max-width: 600px;
+}
+
+/* test-div för att visa på scroll/position fixed */
+.test-div {
+  width: 100%;
+  max-width: 800px;
+}
+
+
+p {
+  margin-top: 50px;
 }
