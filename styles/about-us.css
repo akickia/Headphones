@@ -1,0 +1,101 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin:auto;
+    font-family: 'IBM Plex Sans', sans-serif;
+  }
+
+
+/*header*/
+
+  header {
+    min-height: 50px;
+    display: flex;
+    position: sticky;
+    top: 0px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #80a873;
+    padding: 5px;
+  }
+
+  
+  .header {
+    display: flex;
+  }
+  
+  .header__logo {
+    width: 60px;
+    height: 80px;
+    padding-left: 30px;
+    align-self: center;
+  }
+
+  .header__text {
+    font-size: 50px;
+    font-weight: 300;
+    padding-left: 30px;
+  }
+
+  .header__nav-section {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    align-items: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    padding-right: 30px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+  }
+
+  /*main*/
+
+.block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.block__info {
+    display: flex;
+    flex-direction: row;
+    max-width: 1300px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    margin: 80px 0px
+}
+
+.block__info--general {
+    display: flex;
+    flex-direction: column;
+
+}
+.block__img {
+    max-width: 500px;
+    width: 100%;
+}
+
+footer {
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #80a873;
+    padding: 5px;
+  }  
+  
+ .footer__info {
+    padding: 5%;
+    font-size: large;
+    font-style: italic;
+    font-weight: bold;
+  }
