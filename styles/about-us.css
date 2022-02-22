@@ -24,20 +24,20 @@ header {
     display: flex;
 }
   
-.header__logo {
+.header_logo {
     width: 60px;
     height: 80px;
     padding-left: 30px;
     align-self: center;
 }
 
-.header__text {
+.header_text {
     font-size: 50px;
     font-weight: 300;
     padding-left: 30px;
 }
 
-.header__nav-section {
+.header_nav-section {
     display: flex;
     list-style-type: none;
     justify-content: flex-end;
@@ -47,20 +47,19 @@ header {
     font-size: 16px;
     padding-right: 30px;
 }
-  
 
 ul {
     display: flex;
     list-style-type: none;
-  }
+}
   
-  li {
+li {
     font-weight: bold;
     position: relative;
     padding: 10px 10px;
-  }
+}
   
-  li::after {
+li::after {
     background-color: #ffffff;
     content: "";
     width: 0;
@@ -69,19 +68,20 @@ ul {
     bottom: 0;
     transition: width 0.35s ease 0s;
     position: absolute;
-  }
+}
   
-  li:hover::after {
+li:hover::after {
     width: 100%;
     margin-left: 0px;
     display: flex;
-  }
+}
   
-  a {
+a {
     text-decoration: none;
     color: #ffffff;
     padding: 10px;
-  }
+}
+
 
 /*main*/
 
@@ -91,26 +91,27 @@ ul {
     align-items: center;
 }
 
-.block__info {
+.block_info {
     text-align: center;
     padding: 20px;
     margin: 20px;
     font-size: large;
 }
 
-.block__info--general {
+.block_info_general {
     display: flex;
     flex-direction: column;
     max-width: 700px;
     width: 100%;
 }
 
-.block__info--vision {
+.block_info_vision {
     font-style: italic;
     font-weight: 700;
     font-size: larger;
 }
-.block__info--content {
+
+.block_info_content {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -123,7 +124,7 @@ ul {
     justify-content: space-around;
 }
 
-.block__info--text {
+.block_info_text {
     display: flex;
     flex-direction: column;
     max-width: 400px;
@@ -131,18 +132,18 @@ ul {
     padding: 20px;
 }
 
-.block__img {
+.block_img {
     max-width: 400px;
     width: 100%;
     padding: 20px;
     border-radius: 30%;
 }
 
-.block__img--kicki, .block__img--maja {
+.block_img_kicki, .block_img_maja {
     transform: rotate(10deg);
 }
 
-.block__img--asa {
+.block_img_asa {
     transform: rotate(-10deg);
 }
 
@@ -156,7 +157,7 @@ footer {
     background-color: #80a873;
   }
   
-  .icon {
+.icon {
     width: 50px;
     height: 50px;
-  }
+}
