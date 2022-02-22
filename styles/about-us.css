@@ -48,12 +48,40 @@ header {
     padding-right: 30px;
 }
   
-a {
-    text-decoration: none;
-    color: black;
-    padding: 20px;
-}
 
+ul {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  li {
+    font-weight: bold;
+    position: relative;
+    padding: 10px 10px;
+  }
+  
+  li::after {
+    background-color: #ffffff;
+    content: "";
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    transition: width 0.35s ease 0s;
+    position: absolute;
+  }
+  
+  li:hover::after {
+    width: 100%;
+    margin-left: 0px;
+    display: flex;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px;
+  }
 
 /*main*/
 
@@ -122,17 +150,13 @@ a {
 /*footer*/
 
 footer {
-    min-height: 50px;
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    flex-direction: row;
+    justify-content: center;
     background-color: #80a873;
-    padding: 5px;
-}  
+  }
   
-.footer__info {
-    padding: 5%;
-    font-size: large;
-    font-style: italic;
-    font-weight: bold;
-}
+  .icon {
+    width: 50px;
+    height: 50px;
+  }
