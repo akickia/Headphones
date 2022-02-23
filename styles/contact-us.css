@@ -1,0 +1,127 @@
+
+
+header {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background-color: #80a873;
+  height: 120px;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  margin-left: 20px;
+  width: 80px;
+  height: 95px;
+}
+
+.nav-section {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
+li {
+  font-weight: bold;
+  position: relative;
+  padding: 10px 10px;
+}
+
+li::after {
+  background-color: #ffffff;
+  content: "";
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  transition: width 0.35s ease 0s;
+  position: absolute;
+}
+
+li:hover::after {
+  width: 100%;
+  margin-left: 0px;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px;
+}
+.container {
+  position: absolute;
+  max-width: 1300px;
+  width: 100%;
+  min-height: 500px;
+  max-height: 200px;
+  padding: 40px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  width: 100%;
+  max-width: 820px;
+  min-height: 200px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+
+form {
+  overflow: hidden;
+  position: relative;
+}
+
+.title {
+  color:#80a873;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 1;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+.contact-info {
+  padding: 20px;
+  position: relative;
+}
+
+
+
+.text {
+  color: #333;
+  margin: 10px;
+}
+
+.information {
+  display: flex;
+  color: #555;
+  margin: 10px;
+  align-items: center;
+  font-size: 15px;
+}
+
+.icon  {
+  width: 25px;
+  padding: 10px;
+  
+}
