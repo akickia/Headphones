@@ -1,0 +1,153 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+
+/*header*/
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+  
+.header {
+    display: flex;
+    background-color: #80a873;
+    height: 120px;
+    align-items: center;
+}
+  
+.header_nav-section {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    margin-right: 10px;
+}
+   
+.header_logo {
+    margin-left: 20px;
+    width: 80px;
+    height: 95px;
+}
+  
+ul {
+    display: flex;
+    list-style-type: none;
+}
+  
+li {
+    font-weight: bold;
+    position: relative;
+    padding: 10px 10px;
+}
+  
+li::after {
+    background-color: #ffffff;
+    content: "";
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    transition: 0.35s ease 0s;
+    position: absolute;
+}
+  
+li:hover::after {
+    width: 100%;
+    margin-left: 0px;
+    display: flex;
+}
+  
+a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px;
+}
+  
+
+/*main*/
+
+.main {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.main_info {
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    font-size: large;
+}
+
+.main_info_general {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    width: 100%;
+}
+
+.main_info_vision {
+    font-style: italic;
+    font-weight: 700;
+    font-size: larger;
+}
+
+.main_info_content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    width: 100%;
+    border-color:#80a873;
+    border-radius: 10%;
+    border-width: 4px;
+    border-style: double;
+    justify-content: space-around;
+}
+
+.main_info_text {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.main_info_img {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 30%;
+}
+
+.main_img_kicki, .main_img_maja {
+    transform: rotate(10deg);
+}
+
+.main_img_asa {
+    transform: rotate(-10deg);
+}
+
+
+/*footer*/
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #80a873;
+  }
+  
+.icon {
+    width: 50px;
+    height: 50px;
+}
