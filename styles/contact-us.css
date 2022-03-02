@@ -207,5 +207,10 @@ background-color: #80a873;
  
 }
  
-
-
+.icon_info {
+  display: flex;
+  justify-content: center;
+  margin-left: 45px;
+  color: white;
+  font-size: 12px;
+}
